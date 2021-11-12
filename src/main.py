@@ -51,7 +51,7 @@ class PredictOutput(BaseModel):
           })
 def predict(data: DataToPredict):
     """
-        ADD DOC...
+        Predict the Iris dataset class
     """
     data = dict(data)
     with open(f'./src/tests/data.json', 'w') as jsonfile:
