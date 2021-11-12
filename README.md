@@ -59,6 +59,7 @@ data = {
 url = "http://127.0.0.1:8000/predictions"
 response = requests.get(url, data=json.dump(data))
 
+print(f"Predicted class : {response.json()['predicted']}")
 
 ````
 
