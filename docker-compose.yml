@@ -1,0 +1,17 @@
+version: '3.2'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - 8000:8000
+    # create a shared space between host and container
+    volumes:
+      - ./:/fastapi-template/
+    # command started into the container, here we execute an uvicorn server, for more detail check FastAPI docs
+    command: bash -c "uvicorn src.main:app --host '0.0.0.0' --port '8000' --reload --reload-dir src/"
+
+networks:
+  default:
