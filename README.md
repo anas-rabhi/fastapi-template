@@ -6,7 +6,7 @@ The App predicts the class of the iris dataset.
 
 ## Getting started
 
-**Important**: Once you clone the project, all the following commands have to be executed from the root directory of the project. If you have any troubles don't hesitate to reach me at : [my email](anas.rabhi.hakim@gmail.com) or [my linkedin](https://www.linkedin.com/in/anasrabhi/)
+**Important**: Once you clone the project, all the following commands have to be executed from the root directory of the project. If you have any troubles don't hesitate to reach me at : [anas.rabhi.hakim@gmail.com]() or [my linkedin](https://www.linkedin.com/in/anasrabhi/)
 
 ### Local run
 ***Warning** : If you are using python 32-bit it may not work. Use docker instead, or go to src -> main.py and rename `iris_predict.pkl` into `iris_predict_32b.pkl`*
