@@ -17,7 +17,7 @@ app = FastAPI()
 formatter = logging.Formatter(
     "[%(asctime)s.%(msecs)03d] %(levelname)s [%(thread)d] - %(message)s", "%Y-%m-%d %H:%M:%S")
 handler = RotatingFileHandler('./src/logs/api.log', backupCount=0)
-logging.getLogger().setLevel(20) # DEBUG 10, INFO 20, error 40
+logging.getLogger().setLevel(20) # INFO = 20
 fastapi_logger.addHandler(handler)
 handler.setFormatter(formatter)
 
