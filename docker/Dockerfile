@@ -3,9 +3,9 @@
 
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
 
-COPY requirements/api_requirements.txt control_api/requirements/api_requirements.txt
+COPY requirements/api_requirements.txt fastapi-template/requirements/api_requirements.txt
 
-RUN pip install -r control_api/requirements/api_requirements.txt
+RUN pip install -r fastapi-template/requirements/api_requirements.txt
 
 
 # Define the name of the directory into which the command are run
